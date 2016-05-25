@@ -1,14 +1,88 @@
-body,
-html {
-  width: 100%;
-  min-height: 100%;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
+/*******************************************
+================CSS Reset===================
+********************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  padding: 0;
-  margin: 0;
+	line-height: 1;
 }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************************************
+==============Custom Styling================
+********************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*******************************************
+================Typography==================
+********************************************/
+h1 {
+	
+	display: block;
+}
+h2 {
+	font-size: 18px;
+	line-height: 40px;
+	color: black;
+	font-weight: 500;
+	margin: 0 0 0 50px;
+	display: inline-block;
+}
+h3{
+	font-size: 18px;
+	color: black;
+	font-weight: 300;
+	margin: 4px 0;
+	
+}
+h2 b{
+	font-size: 16px;
+	color: grey;
+	font-weight: 300;
+}
+
+/*******************************************
+==================Header====================
+********************************************/
 header {
 	position: fixed;
 	opacity: 0;
@@ -20,6 +94,10 @@ header {
 	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
+
+/*******************************************
+===================Home=====================
+********************************************/
 #above-fold{
 	position: fixed;
 	height: 100vh;
@@ -56,13 +134,20 @@ header {
     color: #fff;
     font-size: 2.8em;
     font-weight: 300;
+	letter-spacing: 1px;
 }
 .home-subtitle {
     color: #f2f2f2;
     font-size: 1.4em;
     font-weight: 300;
     font-style: italic;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
 }
+
+/*******************************************
+===================Home=====================
+********************************************/
 .body{
 	top: 100px;
 	display: block;
@@ -72,26 +157,9 @@ header {
 	background-color: #fff;
 }
 
-h1 {
-	-webkit-margin-before: 0.67em;
-	-webkit-margin-after: 0.67em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	display: block;
-}
-h2{
-	font-size: 18px;
-	line-height: 40px;
-	color: black;
-	font-weight: 500;
-	margin: 0 0 0 50px;
-	display: inline-block;
-}
-h2 b{
-	font-size: 16px;
-	color: grey;
-	font-weight: 300;
-}
+/*******************************************
+================Navigation==================
+********************************************/
 nav{
 	margin: 0 50px 0 0;
 	height: 40px;
@@ -99,22 +167,74 @@ nav{
 	float: right;
 	
 }
-img{
-	margin: 5px;
-	display: inline-block;
-}
-h3{
-	font-size: 18px;
-	height: 40px;
-	color: black;
-	font-weight: 500;
-	margin: -12px 0 0 0;
-	vertical-align: middle;
-	display: inline-block;
-}
+
+/*******************************************
+==================Links=====================
+********************************************/
 a {
 	text-decoration: none;
+	color: #b3d8ff;
+	cursor:pointer;
 }
-button{
-	margin: 0 auto;
+a:visited {
+	color: #b3d8ff;
+}
+
+/*******************************************
+==================Table=====================
+********************************************/
+table {
+	display: block;
+	border-collapse: seperate;
+	margin-top: 15px;
+}
+table tr {
+	color: #b3d8ff;
+	height: 31px;
+	font-weight: 300;
+}
+/*******************************************
+==============Home Navigation===============
+********************************************/
+.home-name h1{
+	margin-bottom: 5px;
+}
+.home-nav {
+	font-size: 1.4em;
+}
+.home-nav-secondary span::after {
+	content: " /";
+	color: #999;
+}
+/* For IE */
+.home-nav-secondary span:after {
+	content: " /";
+	color: #999;
+}
+.home-nav-secondary span:last-child:after
+{
+  content: '';
+}
+.home-nav a:hover {
+	text-decoration: underline;
+}
+.home-nav td{
+	padding-right: 2rem;
+}
+
+/*******************************************
+============Header Navigation===============
+********************************************/
+.header-nav a:visited {
+	color: black;
+}
+.header-nav a{
+	float: right;
+	margin: 8px 9px;
+	opacity: 0.75;
+	filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+.header-nav a:hover{
+	opacity: 1;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
 }

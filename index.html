@@ -18,18 +18,14 @@
 			Nathan Mackenzie
 			<b>Programmer - Web Developer - Engineer</b>
 		</h2>
-		<nav>
-			<a href="https://github.com/weemackee">
-				<img src="assets/images/github.png" width="30" height="30">
-			</a>
-			<img src="assets/images/linkedin.png" width="30" height="30">
-			<a href="resume.pdf">
-				<h3>Resume</h3>
-			</a>
+		<nav class="header-nav">
+			<a href="resume.pdf"><h3>Resume</h3></a>
+			<a><img src="assets/images/linkedin.png" width="26" height="26"></a>
+			<a href="https://github.com/weemackee"><img src="assets/images/github.png" width="26" height="26"></a>
 		</nav>
 	</header>
-	<section class="container">
-		<div id="above-fold">
+	<article class="container">
+		<section id="above-fold">
 			<div id="wavybg-wrapper" style="width: 100%; height: 100%;"> 
 	    		<canvas>Your browser does not support HTML5 canvas.</canvas>
 			</div>
@@ -38,15 +34,44 @@
 					<h1 class="home-name">Nathan Mackenzie</h1>
 					<div class="home-subtitle">Student at University of Maine</div>
 					<div class="home-subtitle">Mechanical Engineering, CS Minor </div>
+					<table class="home-nav">
+						<tbody>
+							<tr class="home-nav-section">
+								<td class="home-nav-primary">about</td>
+								<td class="home-nav-secondary">
+									<span><a href="resume.pdf">resume</a></span>
+									<span><a href="">linkedin</a></span>
+								</td>
+							</tr>
+							<tr class="home-nav-section">
+								<td class="home-nav-primary">writing</td>
+								<td class="home-nav-secondary">
+									<span><a href="">latest</a></span>
+									<span><a href="">archived</a></span>
+								</td>
+							</tr>
+							<tr class="home-nav-section">
+								<td class="home-nav-primary">contact</td>
+								<td class="home-nav-secondary">
+									<span><a href="mailto:nathan.mackenzie@maine.edu">email</a></span>
+								</td>
+							</tr>
+							<tr class="home-nav-section">
+								<td class="home-nav-primary">projects</td>
+								<td class="home-nav-secondary">
+									<span><a href="https://github.com/weemackee">github</a></span>
+									<span><a id="list">list</a></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-		</div>
-		<div class="body">
-			
-		</div>
-	</section>
-	<footer>
+		</section>
+		<section class="body">
 		
-	</footer>
+		</section>
+	</article>
+	
 </body>
 </html>
