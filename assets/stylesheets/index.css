@@ -238,3 +238,33 @@ table tr {
 	opacity: 1;
 	filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+
+
+
+.category{
+    padding: 100px 0;
+}
+
+#programmer{
+	background-color: #FFFFFF;
+}
+
+#web-dev{
+	background-color: #F7F7F7;
+}
+
+#engineer{
+	background-color: #FFFFFF;
+}
+
+#open-source{
+	background-color: #F7F7F7;
+}
+
+div h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 40px;
+	width: 100%;
+}
