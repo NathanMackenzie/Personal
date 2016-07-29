@@ -64,7 +64,6 @@ h2 {
 	line-height: 40px;
 	color: black;
 	font-weight: 500;
-	margin: 0 0 0 50px;
 	display: inline-block;
 }
 h3{
@@ -267,4 +266,43 @@ div h2{
 	font-weight: 700;
 	font-size: 40px;
 	width: 100%;
+	margin-bottom: 40px;
+}
+
+.col-web{
+	margin: auto;
+	width: 25%;
+	align: center;
+	text-align: center;
+}
+
+
+#logo{
+	margin: 0 0 0 40px;
+}
+
+h4{
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+.project-name{
+	margin: 15px 0;
+	text-transform: none;
+	height: 40px;
+}
+.text-muted{
+	color: #777;
+}
+p{
+    font-size: 14px;
+    line-height: 1.75;
+}
+.active-link{
+	color: #337AB7;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+.source-link{
+	color: #337AB7;
 }
