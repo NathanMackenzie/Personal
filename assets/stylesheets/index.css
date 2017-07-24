@@ -250,14 +250,15 @@ table tr {
 
 #web-dev{
 	background-color: #F7F7F7;
+	text-align: center;
 }
 
 #engineer{
-	background-color: #FFFFFF;
+	background-color: #F7F7F7;
 }
 
 #open-source{
-	background-color: #F7F7F7;
+	background-color: #FFFFFF;
 }
 
 div h2{
@@ -269,11 +270,28 @@ div h2{
 	margin-bottom: 40px;
 }
 
-.col-web{
-	margin: auto;
+.col-eng{
 	width: 25%;
 	align: center;
+	margin: 0 auto;
 	text-align: center;
+	
+	justify-content: center;
+	vertical-align: text-top;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.col-web{
+	width: 25%;
+	align: center;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	justify-content: center;
+	vertical-align: text-top;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
