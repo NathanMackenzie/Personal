@@ -52,11 +52,56 @@ function smoothScroll() {
 
 function openResModal(){
     document.querySelector('.resume-modal').style.display = 'flex';
+    //$(".resume-modal").fadeIn();
 }
 
 function closeResModal() {
     document.querySelector('.resume-modal').style.display = 'none';
+    //$(".resume-modal").fadeOut();
 }
 
+var $engineer = $('#engineer');
+var $programmer = $('#programmer');
+var $web = $('#web-dev');
+
+$engineer.waypoint(function (direction) {
+    if (direction == 'down'){
+        document.getElementById("engin").style.color = '#3070AC';
+        document.getElementById("program").style.color = 'gray';
+        document.getElementById("web_dev").style.color = 'gray';
+    }
+}, {offset: '70%'})
+
+$engineer.waypoint(function (direction) {
+    if (direction == 'up'){
+        document.getElementById("engin").style.color = '#3070AC';
+        document.getElementById("program").style.color = 'gray';
+        document.getElementById("web_dev").style.color = 'gray';
+    }
+}, {offset: '-70%'})
 
 
+$programmer.waypoint(function (direction) {
+    if (direction == 'down'){
+        document.getElementById("engin").style.color = 'gray';
+        document.getElementById("program").style.color = '#3070AC';
+        document.getElementById("web_dev").style.color = 'gray';
+    }
+}, {offset: '70%'})
+
+$programmer.waypoint(function (direction) {
+    if (direction == 'up'){
+        document.getElementById("engin").style.color = 'gray';
+        document.getElementById("program").style.color = '#3070AC';
+        document.getElementById("web_dev").style.color = 'gray';
+    }
+}, {offset: '-70%'})
+
+
+$web.waypoint(function (direction) {
+    if (direction == 'down'){
+        document.getElementById("engin").style.color = 'gray';
+        document.getElementById("program").style.color = 'gray';
+        document.getElementById("web_dev").style.color = '#3070AC';
+    }
+}, {offset: '70%'})
