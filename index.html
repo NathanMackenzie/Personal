@@ -7,9 +7,7 @@
 <title>Nathan A Mackenzie</title>
 
 <link rel="stylesheet" href="assets/stylesheets/index.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-<script src="assets/javascripts/index.js"></script>
-<script src="assets/javascripts/waterpipe.js"></script>
+
 
 </head>
 <body>
@@ -19,7 +17,7 @@
 			<b><span id = "engin" >Engineer</span> - <span id = "program">Programmer</span> - <span id="web_dev">Web Developer</span></b>
 		</h2>
 		<nav class="header-nav">
-			<a href="resume.pdf"><h3>Resume</h3></a>
+			<a href="resume.pdf"><h3>Resumé</h3></a>
 			<a href="https://www.linkedin.com/in/nathan-mackenzie-a34377152/"><img src="assets/images/linkedin.png" width="26" height="26"></a>
 			<a href="https://github.com/NathanMackenzie"><img src="assets/images/github.png" width="26" height="26"></a>
 		</nav>
@@ -33,7 +31,7 @@
 				<div class="home">
 					<h1 class="home-name">Nathan Mackenzie</h1>
 					<div class="home-subtitle">Student at University of Maine</div>
-					<div class="home-subtitle">Mechanical Engineering, CS Minor </div>
+					<div class="home-subtitle">Mechanical Engineering </div>
 					<table class="home-nav">
 						<tbody>
 							<tr class="home-nav-section">
@@ -59,9 +57,31 @@
 						</tbody>
 					</table>
 				</div>
+                <div id = "scroll"></div>
 			</div>	
 		</section>
 		<section class="body">
+            <div id="engineer" class="category">
+				<h2>Engineering</h2>
+				<div class="col-eng">
+					<img src="assets/images/power_plant.png" width="100" height="100">
+					<h4 class="project-name">Power Plant Analysis</h4>
+					<p class="text-muted">An analysis of a Brayton Cycle power plant which utilizes a high and a low temp regenerator. Written in MATLAB.</p>
+					<a class="active-link" href="https://github.com/weemackee/Power-Plant-Analysis">Source Code</a>
+				</div>
+                <div class="col-eng">
+					<img src="assets/images/charging_dock.png" width="100" height="100">
+					<h4 class="project-name">Charging Dock</h4>
+					<p class="text-muted">A charging cable organizer with integrated docking for Apple Watch and iPhone. Designed in autodesk Inventor and 3D printed on an Ultimaker 2+.</p>
+					<a class="active-link" href="https://github.com/weemackee/Power-Plant-Analysis">Source Code</a>
+				</div>
+                <div class="col-eng">
+					<img src="assets/images/wind_turbine.png" width="100" height="100">
+					<h4 class="project-name">Wind Turbine Design</h4>
+					<p class="text-muted">Blade and control system design for a 3.1MW wind turbine. </p>
+					<a class="active-link" href="https://github.com/weemackee/Power-Plant-Analysis">Source Code</a>
+				</div>
+			</div>
 			<div id="programmer" class="category">
 				<h2>Programming</h2>
 				
@@ -116,18 +136,23 @@
 					<p class="text-muted">COMING SOON!<br/>Consulting design and development of a custom website for the Broadway Delicatessen in Brunswick, Maine. Written with Ruby on Rails and deployed to an AWS server.</p>
 				</div>
 			</div>
-			<div id="engineer" class="category">
-				<h2>Engineering</h2>
-				<div class="col-eng">
-					<img src="assets/images/power_plant.png" width="100" height="100">
-					<h4 class="project-name">Power Plant Analysis</h4>
-					<p class="text-muted">An analysis of a Brayton Cycle power plant which utilizes a high and a low temp regenerator. Written in MATLAB.</p>
-					<a class="active-link" href="https://github.com/weemackee/Power-Plant-Analysis">Source Code</a>
-				</div>
-			</div>
 			
 		</section>
+        <div class="resume-modal">
+            <div class="modal-content">
+                <div class="close">+</div>
+                <img src="assets/images/resume.png" width="100" height="100"/>
+                <div class="vertical-menu">
+                    <a href="#">Engineering Resumé</a>
+                    <a href="#">Programming Resumé</a>
+                </div>
+            </div>
+        </div>
 	</article>
-	
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascripts/index.js"></script>
+    <script src="assets/javascripts/waterpipe.js"></script>
 </body>
+
 </html>
