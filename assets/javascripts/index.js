@@ -4,6 +4,9 @@ $( document ).ready(function() {
 	$(".home").fadeIn(1000);
 	
 	document.getElementById("list").onclick = function() {smoothScroll()};
+    document.getElementById("bt-res1").onclick = function (){openResModal()}
+    document.getElementById("bt-res2").onclick = function (){openResModal()}
+    document.getElementById("close").onclick = function () {closeResModal()}
 });
 
 window.addEventListener('scroll', function(){
@@ -47,8 +50,13 @@ function smoothScroll() {
            'slow');
 }
 
+function openResModal(){
+    document.querySelector('.resume-modal').style.display = 'flex';
+}
 
-
+function closeResModal() {
+    document.querySelector('.resume-modal').style.display = 'none';
+}
 
 
 

@@ -394,12 +394,13 @@ video{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .modal-content {
@@ -409,21 +410,41 @@ video{
     border-radius: 8px;
     text-align: center;
     padding: 20px;
-    
+    position: fixed;
 }
 
 .vertical-menu {
-  width: 400px; 
+    width: 500px; 
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
 .vertical-menu a {
-  background-color: #eee; 
-  display: block; 
-  padding: 12px; 
-  text-decoration: none; 
+    background-color: #eee; 
+    display: block; 
+    padding: 15px; 
+    text-decoration: none; 
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: #3070AC;
 }
 
 .vertical-menu a:hover {
-  background-color: #3070AC; 
+    background-color: #ccc; 
+}
+
+.close {
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: #3070AC;
 }
 
