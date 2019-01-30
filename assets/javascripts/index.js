@@ -66,42 +66,50 @@ var $web = $('#web-dev');
 
 $engineer.waypoint(function (direction) {
     if (direction == 'down'){
-        document.getElementById("engin").style.color = '#3070AC';
-        document.getElementById("program").style.color = 'gray';
-        document.getElementById("web_dev").style.color = 'gray';
+       activeCat(0);
     }
 }, {offset: '70%'})
 
 $engineer.waypoint(function (direction) {
     if (direction == 'up'){
-        document.getElementById("engin").style.color = '#3070AC';
-        document.getElementById("program").style.color = 'gray';
-        document.getElementById("web_dev").style.color = 'gray';
+       activeCat(0);
     }
 }, {offset: '-70%'})
 
 
 $programmer.waypoint(function (direction) {
     if (direction == 'down'){
-        document.getElementById("engin").style.color = 'gray';
-        document.getElementById("program").style.color = '#3070AC';
-        document.getElementById("web_dev").style.color = 'gray';
+       activeCat(1);
     }
 }, {offset: '70%'})
 
 $programmer.waypoint(function (direction) {
     if (direction == 'up'){
-        document.getElementById("engin").style.color = 'gray';
-        document.getElementById("program").style.color = '#3070AC';
-        document.getElementById("web_dev").style.color = 'gray';
+       activeCat(1);
     }
 }, {offset: '-70%'})
 
 
 $web.waypoint(function (direction) {
     if (direction == 'down'){
-        document.getElementById("engin").style.color = 'gray';
-        document.getElementById("program").style.color = 'gray';
-        document.getElementById("web_dev").style.color = '#3070AC';
+        activeCat(2);
     }
 }, {offset: '70%'})
+
+function activeCat(i){
+    resetActiveCat();
+    
+    if(i == 0){
+        document.getElementById("engin").style.color = '#3070AC';
+    }else if(i == 1){
+        document.getElementById("program").style.color = '#3070AC';
+    }else if(i == 2){
+        document.getElementById("web_dev").style.color = '#3070AC';
+    }
+}
+
+function resetActiveCat(){
+    document.getElementById("engin").style.color = 'gray';
+    document.getElementById("program").style.color = 'gray';
+    document.getElementById("web_dev").style.color = 'gray';
+}
