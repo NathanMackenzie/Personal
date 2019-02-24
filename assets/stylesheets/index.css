@@ -275,31 +275,7 @@ div h2{
 	margin-bottom: 40px;
 }
 
-.col-eng{
-	width: 25%;
-	align: center;
-	margin: 0 auto;
-	text-align: center;
-	display: inline-block;
-	justify-content: center;
-	vertical-align: text-top;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.col-pro{
-	width: 25%;
-	align: center;
-	margin: 0 auto;
-	text-align: center;
-	display: inline-block;
-	justify-content: center;
-	vertical-align: text-top;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.col-web{
+.display{
 	width: 25%;
 	align: center;
 	margin: 0 auto;
@@ -325,6 +301,7 @@ h4{
 	margin: 15px 0;
 	text-transform: none;
 	height: 40px;
+    
 }
 .text-muted{
 	color: #777;
@@ -342,14 +319,44 @@ p{
 	color: #337AB7;
 }
 
+/*******************************************
+=============Picture Previews===============
+********************************************/
 
+.display img{
+    opacity:0; 
+	filter:alpha(opacity=0);
+	margin: -40px;
+    height:180px;
+    position: relative;
+}
 
+.display img:hover{
+	opacity:1; 
+	filter:alpha(opacity=1);
+	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 6px;
+}
 
+#wind-turbine-pv{
+    background-image:url('../images/index/wind_turbine.png') ;
+	background-repeat: no-repeat;
+	background-size: 100px, 100px;
+	background-position: center center;
+    height: 100px;
+}
 
+#charging-dock-pv{
+    background-image:url('../images/index/charging_dock.png') ;
+	background-repeat: no-repeat;
+	background-size: 100px, 100px;
+	background-position: center center;
+    height: 100px;
+}
 
-
-
-
+/*******************************************
+=============Video Previews=================
+********************************************/
 
 video:hover{
 	opacity:1; 
@@ -362,29 +369,34 @@ video{
 	opacity:0; 
 	filter:alpha(opacity=0);
 	margin: -40px;
+    
 }
 
 #deli-vid{
-	background-image:url('../images/deli.png') ;
+	background-image:url('../images/index/deli.png') ;
 	background-repeat: no-repeat;
 	background-size: 100px, 100px;
 	background-position: center center;
 }
 
 #neural-vid{
-	background-image:url('../images/neural_net.png') ;
+	background-image:url('../images/index/neural_net.png') ;
 	background-repeat: no-repeat;
 	background-size: 100px, 100px;
 	background-position: center center;
 }
 
 #cryptic-vid{
-	background-image:url('../images/cryptic.png') ;
+	background-image:url('../images/index/cryptic.png') ;
 	background-repeat: no-repeat;
 	background-size: 100px, 100px;
 	background-position: center center;
 }
 
+
+/*******************************************
+================Modal Styles================
+********************************************/
 
 .resume-modal {
     width: 100%;

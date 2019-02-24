@@ -18,7 +18,7 @@
 		</h2>
 		<nav class="header-nav">
 			<a id="bt-res1"><h3>Resumé</h3></a>
-			<a href="https://www.linkedin.com/in/nathan-mackenzie-a34377152/"><img src="assets/images/linkedin.png" width="26" height="26"></a>
+			<a href="https://www.linkedin.com/in/nathan-mackenzie-256a4b126/"><img src="assets/images/linkedin.png" width="26" height="26"></a>
 			<a href="https://github.com/NathanMackenzie"><img src="assets/images/github.png" width="26" height="26"></a>
 		</nav>
 	</header>
@@ -38,7 +38,7 @@
 								<td class="home-nav-primary">about</td>
 								<td class="home-nav-secondary">
 									<span><a id="bt-res2">resumé</a></span>
-									<span><a a href="https://www.linkedin.com/in/nathan-mackenzie-a34377152/">linkedin</a></span>
+									<span><a a href="https://www.linkedin.com/in/nathan-mackenzie-256a4b126/">linkedin</a></span>
 								</td>
 							</tr>
 							<tr class="home-nav-section">
@@ -51,7 +51,7 @@
 								<td class="home-nav-primary">projects</td>
 								<td class="home-nav-secondary">
 									<span><a href="https://github.com/NathanMackenzie">github</a></span>
-									<span><a id="list">list</a></span>
+									<span><a id="list">portfolio</a></span>
 								</td>
 							</tr>
 						</tbody>
@@ -62,20 +62,24 @@
 		<section class="body">
             <div id="engineer" class="category">
 				<h2>Engineering</h2>
-                <div class="col-eng">
-					<img src="assets/images/index/wind_turbine.png" width="100" height="100">
+                <div class="display">
+                    <div id="wind-turbine-pv">
+					   <img src="assets/images/charging_dock/preview.png">
+                    </div>
 					<h4 class="project-name">Wind Turbine Design</h4>
-					<p class="text-muted">Blade and control system design for a 3.1MW wind turbine. </p>
+					<p class="text-muted">Areodynamic design of a 3.1MW wind turbine using SolidWorks, XFoil, and BEM theory. Control system and simulation done using Simulink. </p>
 					<a class="active-link" href="wind_turbine.html">View Site</a>
 				</div>
-                <div class="col-eng">
-					<img src="assets/images/charging_dock.png" width="100" height="100">
+                <div class="display">
+                    <div id="charging-dock-pv">
+					   <img src="assets/images/charging_dock/preview.png">
+                    </div>
 					<h4 class="project-name">Charging Dock</h4>
 					<p class="text-muted">A charging cable organizer with integrated docking for Apple Watch and iPhone. Designed in autodesk Inventor and 3D printed on an Ultimaker 2+.</p>
-					<a class="active-link" href="https://github.com/weemackee/Power-Plant-Analysis">Visit Site</a>
+					<a class="active-link" href="charging_dock.html">Visit Site</a>
 				</div>
-				<div class="col-eng">
-					<img src="assets/images/power_plant.png" width="100" height="100">
+				<div class="display">
+					<img src="assets/images/index/power_plant.png" width="100" height="100">
 					<h4 class="project-name">Power Plant Analysis</h4>
 					<p class="text-muted">An analysis of a Brayton Cycle power plant which utilizes a high and a low temp regenerator. Written in MATLAB.</p>
 					<a class="active-link" href="https://github.com/weemackee/Power-Plant-Analysis">Source Code</a>
@@ -85,9 +89,9 @@
 			<div id="programmer" class="category">
 				<h2>Programming</h2>
 				
-				<div class="col-pro">
+				<div class="display">
 					<div id="neural-vid">
-						<video height="180px"  autoplay loop>
+						<video autoplay muted loop height="180px"  >
 						  <source src="assets/video/writing.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -95,9 +99,9 @@
 					<p class="text-muted">A feed-forward neural network for hand writing recognition. Created with C++ and using the JUCE GUI library. Uses back propogation to train the network to a provided training set.</p>
 					<a class="active-link" href="https://github.com/weemackee/writing-recognition">Source Code</a>
 				</div>
-					<div class="col-pro">
+					<div class="display">
 						<div id="cryptic-vid">
-							<video height="180px"  autoplay loop>
+							<video autoplay muted loop height="180px">
 							  <source src="assets/video/cryptic.mp4" type="video/mp4">
 							</video>
 						</div>
@@ -106,10 +110,10 @@
 						<a class="active-link" href="https://github.com/NathanMackenzie/Cryptic">Source Code</a>
 					</div>
 				</div>
-			</div>
+			
 			<div id="web-dev" class="category">
 				<h2>Web Development</h2>
-				<div class="col-web">
+				<div class="display">
 					
 					<img src="assets/images/personal_web.png" width="100" height="100">
 					
@@ -119,22 +123,14 @@
 					<a class="active-link" href="https://nathanmackenzie.github.io/Personal/">Active Site</a>
 					<a class="source-link" href="https://github.com/NathanMackenzie/Personal">Source Code</a>
 				</div>
-				<div class="col-web">
+				<div class="display">
 					<img src="assets/images/auto_mate.png" width="100" height="100">
 					<h4 class="project-name">AutoMate</h4>
 					<p class="text-muted">Automate is a website created to run and manage scheduled web task such as wishing people 'Happy Birthday!' on Facebook and checking for new job listings. Writen with Ruby on Rails and deployed to a Heroku server.</p>
 					<a class="active-link" href="https://protected-river-17457.herokuapp.com/">Active Site</a>
 					<a class="source-link" href="https://github.com/weemackee/auto-mate">Source Code</a>
 				</div>
-				<div class="col-web">
-					<div id="deli-vid">
-						<video height="180px"  autoplay loop>
-						  <source src="assets/video/deli.mp4" type="video/mp4">
-						</video>
-					</div>
-					<h4 class="project-name">Broadway Delicatessen</h4>
-					<p class="text-muted">COMING SOON!<br/>Consulting design and development of a custom website for the Broadway Delicatessen in Brunswick, Maine. Written with Ruby on Rails and deployed to an AWS server.</p>
-				</div>
+				
 			</div>
 			
 		</section>
@@ -143,8 +139,8 @@
                 <div id="close" class="close">+</div>
                 <img src="assets/images/resume.png" width="100" height="100"/>
                 <div class="vertical-menu">
-                    <a href="#">Engineering Resumé</a>
-                    <a href="#">Programming Resumé</a>
+                    <a href="EngineeringResume.pdf">Engineering Resumé</a>
+                    <a href="ProgrammingResume.pdf">Programming Resumé</a>
                 </div>
             </div>
         </div>
