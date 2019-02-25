@@ -354,6 +354,23 @@ p{
     height: 100px;
 }
 
+#power-plant-pv{
+    background-image:url('../images/index/power_plant.png') ;
+	background-repeat: no-repeat;
+	background-size: 100px, 100px;
+	background-position: center center;
+    height: 100px;
+    width: 325px;
+}
+
+#personal-site-pv{
+    background-image:url('../images/index/personal_web.png') ;
+	background-repeat: no-repeat;
+	background-size: 100px, 100px;
+	background-position: center center;
+    height: 100px;
+    width: 325px;
+}
 /*******************************************
 =============Video Previews=================
 ********************************************/
