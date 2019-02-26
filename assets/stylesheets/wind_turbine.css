@@ -56,7 +56,7 @@ body {
 ================Typography==================
 ********************************************/
 h1 {
-    margin: 20px;
+    margin: 50px;
     font-size: 45px;
 	
 }
@@ -78,6 +78,16 @@ h2 b{
 	font-size: 16px;
 	color: grey;
 	font-weight: 300;
+}
+h4{
+    margin: 50px;
+    font-size: 30px;
+	
+}
+h5{
+    margin: 50px;
+    font-size: 25px;
+	text-align: left;
 }
 
 /*******************************************
@@ -115,6 +125,10 @@ nav{
 	opacity: 1;
 	filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+.titles{
+    text-align: center;
+    margin: 0px;
+}
 
 #logo{
 	margin: 0 0 0 40px;
@@ -132,7 +146,7 @@ article {
 section {
     padding-top: 40px;
     width: 900px;
-    height: 100vh;
+    height: 6300px;
     background-color: white;
     display: inline-block;
     text-align: center;
@@ -142,5 +156,6 @@ section {
 p {
     font-size: 18px;
     line-height: 30px;
-    margin: 40px;
+    margin: 50px;
+    text-align: left;
 }
