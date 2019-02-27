@@ -26,42 +26,42 @@
         <section>
             <h1>3.1 MW Turbine Blade<br/>& Control Design</h1>
             <p>
-                This page will highlight the process and        results of designing a 3.1-megawatt wind turbine and the control system to accompany it. Initially, several design criteria will be presented. With those, some initial design choices are made which will become the basis for the rest of the design. It should be noted that this is merely an aerodynamic design with little emphasis on the structural, fatigue, and noise aspects need to make a safe and marketable turbine. Furthermore, control design will rely on the use of a hypothetical (yet reasonable) transfer function, since the calculation of a such is beyond the scope of this project. </p>
+                This page will highlight the process and        results of designing a 3.1-megawatt wind turbine and the control system to accompany it. Initially, several design criteria are presented and with those, some initial design choices made, which will become the basis of the rest of the design. It should be noted that this is merely an aerodynamic design with little emphasis on the structural, fatigue, and noise aspects needed to make a safe and marketable turbine. Furthermore, control design will rely on the use of a hypothetical (yet reasonable) transfer function, since the calculation of a such is beyond the scope of this project. </p>
             <h4>Part One: Blade Design</h4>
             <h5>Initial Criteria</h5>
             <p>
-                Initially, three design constraints are presented (Table 1). The turbine is to have a rated capacity of 3.1 MW when operating at a wind speed of 11 m/s. Also, the generator and gearbox efficiency will be 86%. This is important since the energy that the blade must extract from the air will be closer to 3.6 MW, to accommodate for these losses within the nacelle.
+                Below are the three initial design constraints (Table 1). The turbine is to have a rated capacity of 3.1 MW when operating at a wind speed of 11 m/s. Also, the generator and gearbox efficiency will be 86%. This is important since the energy that the blade must extract from the wind will be closer to 3.6 MW, to accommodate for these losses within the nacelle.
             </p>
             <p class="titles">Table 1. Initial design criteria.</p>
             <img src="assets/images/wind_turbine/criteria.png">
             <h5>Initial Decisions</h5>
             <p>
-                Next, three design decisions are made (shown below). This turbine will be a three-bladed design with a hub radius of 3 meters. A <a href="https://en.wikipedia.org/wiki/Tip-speed_ratio">tip speed ratio</a> (TSR) of 8 will be used. This is an arbitrary decision but reasonable seeing as most large scale turbines have a TSR between 6-8.
+                Next, three design decisions are made (Table 2). This turbine will be a three-bladed design with a hub radius of 3 meters. A <a href="https://en.wikipedia.org/wiki/Tip-speed_ratio">tip speed ratio</a> (TSR) of 8 will be used. This is an arbitrary decision but reasonable seeing as most large scale turbines have a TSR between 6-8.
             </p>
             <p class="titles">Table 2. Initial design decisions.</p>
             <img src="assets/images/wind_turbine/decisions.png">
             <h5>Airfoil</h5>
             <p>
-                The <a href="http://www.airfoildb.com/airfoils/1472">Althaus AH 93-W-145</a> airfoil will be used for this turbine. With a relatively flat bottom it's a good low speed design commonly used on wind turbines. Using <a href="https://web.mit.edu/drela/Public/web/xfoil/">XFOIL</a> the lift and drag coefficients of this airfoil are found for varying angles of attack (Figure 1). 
+                The <a href="http://www.airfoildb.com/airfoils/1472">Althaus AH 93-W-145</a> airfoil will be used for this turbine. With a relatively flat bottom it's a good low speed design commonly in use on wind turbines. Using <a href="https://web.mit.edu/drela/Public/web/xfoil/">XFOIL</a> the lift and drag coefficients of this airfoil are found for varying angles of attack (Figure 1). 
             </p>
             <img src="assets/images/wind_turbine/xfoil.png" height="400px">
             <p class="titles">
                 Figure 1. XFOIL results for Althaus AH 93-W-145 at 5.2 degree AOA.
             </p>
             <p>
-                With a list of these thrust and drag coefficients, a graph can be made plotting the ratio of lift to drag versus the angle of attack (Graph 1). This allowed for an optimal angle of attack of roughly 5.2 degrees to be determined. 
+                With a list of these thrust and drag coefficients, a graph can be made plotting the ratio of lift to drag versus the angle of attack (Graph 1). This allows for an optimal angle of attack of roughly 5.2 degrees to be determined. 
             </p>
             <img src="assets/images/wind_turbine/AOA.png" height="300px">
             <p class="titles">Graph 1. Optimal angle of attack.</p>
             <p>
-                Before the twist of the blade can be calculated, the blades radius must first be determined. Though the radius cannot be known for certain until a BEM analysis has been performed and an iterative approach taken, an accurate prediction can be made for this first design iteration. Using equation 1, set the downstream windspeed to 11m/s and coefficient of performance to .45. The true COP won't be known until after the BEM analysis, but a value of .45 is close to modern large scale wind turbines. It should be noted that this value must not exceed .593, for it would then be in violation of the <a href="https://en.wikipedia.org/wiki/Betz%27s_law">Betz limit</a>.</p>
+                Before the twist of the blade can be calculated, the blades radius must first be determined. Though the radius cannot be known for certain until after a BEM analysis has been performed, an accurate prediction can be made for this first design iteration. Using equation 1, set the downstream windspeed to 11m/s, power to 3.1 MW, and coefficient of performance to .45. The true COP also won't be known until after the BEM analysis, but a value of .45 is close to modern large scale wind turbines. It should be noted that this value must not exceed .593, for it would then be in violation of the <a href="https://en.wikipedia.org/wiki/Betz%27s_law">Betz limit</a>.</p>
             <img src="assets/images/wind_turbine/rotor_radius.png" height="300px">
             <p class="titles">Equation 1. Power equation.</p>
             <p>
                 Since the proper turbine radius has already been determined through an iterative design approch, we'll continue forward with a radius of 56 meter. 
             </p>
             <p>
-                Next the twist and chord length of the blade are calculated. Since the angle of the relative velocity of incoming flow changes the further out on the blade you go, so must the angle of the blade to ensure the optimal AOA is maintained (Table 3). Also, as the velocity of the incoming flow increase, the optimal chord length must decrease (Graph 2). 
+                Next the twist and chord length of the blade are calculated. Since the angle of the relative velocity of incoming flow changes the further out on the blade you travel, so must the angle of the blade to ensure the optimal AOA is maintained (Table 3). Also, as the velocity of the incoming flow increases the further out on the blade you travel, the optimal chord length must decrease (Graph 2). 
             </p>
             
             <img src="assets/images/wind_turbine/twist.png" height="300px">
@@ -69,7 +69,7 @@
             <img src="assets/images/wind_turbine/chord.png" height="300px">
             <p class="titles">Graph 2. Chord length versus radius.</p>
             <p>
-                In turbine design a majority of the power comes from the outer 2/3rd's of the blade. This is because the moment arm acting about the hub of the rotor is longer. Also, the blade will need to taper in towards the hub at some point. Therefore, the chord of this blade will begin decreasing in length once it reaches 5m at roughly 10m from the hub. 
+                In turbine design a majority of the power comes from the outer 2/3rd's of the blade. This is because the moment arm acting about the hub of the rotor is longer. Also, the blade will need to taper in towards the hub at some point. Therefore, the chord of this blade will begin decreasing in length once it reaches 5m at roughly 16m from the hub. 
             </p>
             <p>
                 Below is an STL rendering of the final blade design. Created using SolidWorks. 
@@ -79,7 +79,7 @@
                 Blade Element Momentum Analysis (BEM)
             </h5>
             <p>
-                Now that the blade is designed, the theoretical performance can be anlyzed using <a href="https://en.wikipedia.org/wiki/Blade_element_momentum_theory">Blade Element Momentum Theory</a>. BEM analysis predicts the COP at different TSR's for the designed turbine, as well as the thrust coefficients (Figure 2). Using the theoretical COP and plugging back into equation 1, the designed can be checked to see whether the blade will produce enough power. If not, an iterative approach must be taken where a parameter-such as turbine radius-is adjusted and calculation redone to see if the new blade meets performance specifications.
+                Now that the blade is designed, the theoretical performance can be anlyzed using <a href="https://en.wikipedia.org/wiki/Blade_element_momentum_theory">Blade Element Momentum Theory</a>. BEM analysis predicts the COP at different TSR's for the designed turbine, as well as the thrust coefficients (Figure 2). Using the theoretical COP and plugging back into equation 1, the designe can be checked to see whether the blade will produce enough power. If not, an iterative approach must be taken where a parameter-such as turbine radius-is adjusted and calculation redone to see if the new blade meets performance specifications.
             </p>
             <img src="assets/images/wind_turbine/BEM.png" height="400px">
             <p class="titles">Figure 2. BEM blade performance results.</p>
