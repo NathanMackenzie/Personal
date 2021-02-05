@@ -354,15 +354,14 @@ p{
     height: 100px;
 }
 
-#power-plant-pv{
-    background-image:url('../images/index/power_plant.png') ;
+#psyc-pv{
+    background-image:url('../images/index/psyc.png') ;
 	background-repeat: no-repeat;
 	background-size: 100px, 100px;
 	background-position: center center;
     height: 100px;
-    
-    
 }
+
 
 #personal-site-pv{
     background-image:url('../images/index/personal_web.png') ;
@@ -390,8 +389,8 @@ video{
     
 }
 
-#deli-vid{
-	background-image:url('../images/index/deli.png') ;
+#retire-vid{
+	background-image:url('../images/index/retirement.png') ;
 	background-repeat: no-repeat;
 	background-size: 100px, 100px;
 	background-position: center center;
